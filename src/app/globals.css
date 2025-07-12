@@ -24,3 +24,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .wood-texture {
+    background-image: repeating-linear-gradient(
+        45deg,
+        #ede3d3 0,
+        #ede3d3 10px,
+        #dcc9a6 10px,
+        #dcc9a6 20px
+      );
+    background-size: 400px 400px;
+  }
+}
