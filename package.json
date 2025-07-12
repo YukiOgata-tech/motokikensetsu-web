@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/noto-sans-jp": "^5.2.6",
     "@fontsource/noto-serif-jp": "^5.2.6",
     "firebase": "^11.10.0",
     "firebase-functions": "^6.3.2",
@@ -16,7 +17,8 @@
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-firebase-hooks": "^5.1.1"
+    "react-firebase-hooks": "^5.1.1",
+    "sonner": "^2.0.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
