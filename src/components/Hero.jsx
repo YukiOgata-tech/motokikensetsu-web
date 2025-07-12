@@ -4,16 +4,23 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-60 sm:h-80 flex items-center justify-center bg-gradient-to-br from-red-100 to-red-200 wood-texture text-black overflow-hidden">
+    <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <Image
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80"
+        alt="construction"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/30" />
       <motion.h1
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-3xl sm:text-5xl font-bold text-red-700 drop-shadow"
+        className="relative z-10 text-4xl sm:text-6xl font-bold text-white drop-shadow-md"
       >
         株式会社本木建設
       </motion.h1>
-      <Image src="/next.svg" alt="placeholder" width={0} height={0} className="hidden" />
     </section>
   );
 }

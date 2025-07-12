@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm';
+import AnimatedSection from '@/components/AnimatedSection';
 
 export const metadata = {
   title: 'お問い合わせ | 株式会社本木建設',
@@ -8,9 +9,9 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="max-w-2xl mx-auto">
-      <h1 className="text-2xl font-semibold mb-4">お問い合わせ</h1>
+    <AnimatedSection className="max-w-2xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-center">お問い合わせ</h1>
       <ContactForm />
-    </div>
+    </AnimatedSection>
   );
 }

@@ -16,11 +16,13 @@ const companyInfo = [
   },
 ];
 
+import AnimatedSection from '@/components/AnimatedSection';
+
 export default function About() {
   return (
-    <div className="max-w-2xl mx-auto">
-      <h1 className="text-2xl font-semibold mb-4">会社概要</h1>
-      <table className="w-full border border-gray-300 text-left">
+    <AnimatedSection className="max-w-2xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-center">会社概要</h1>
+      <table className="w-full border border-gray-300 text-left bg-white/70">
         <tbody>
           {companyInfo.map((item) => (
             <tr key={item.label} className="border-b border-gray-300">
@@ -30,6 +32,6 @@ export default function About() {
           ))}
         </tbody>
       </table>
-    </div>
+    </AnimatedSection>
   );
 }
