@@ -44,11 +44,13 @@ export default function HomePage() {
       <Section id="contact" title="お問い合わせ">
         <p>ご相談・ご質問はこちらから。</p>
       </Section>
+
       <footer className="p-4 text-center bg-gray-100 space-y-2">
         <p>© {new Date().getFullYear()} Motoki Kensetsu Co., Ltd.</p>
         <Link href="/admin">
           <Button className="h-8 px-3 text-sm">施工管理</Button>
         </Link>
+
       </footer>
     </main>
   );
