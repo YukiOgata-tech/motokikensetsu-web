@@ -5,15 +5,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const images = [
-  "https://tekisei-research.com/images/contents/tcblog_27.jpg",
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80"
+  "/images/hero-01.png",
+  "/images/hero-02.png",
+  "/images/hero-03.png"
 ];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
-  // 4秒ごとに画像切り替え
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
@@ -29,7 +29,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
           className="absolute inset-0 w-full h-full"
         >
           <Image
