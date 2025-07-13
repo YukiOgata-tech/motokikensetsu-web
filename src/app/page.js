@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
 
       <AnimatedSection className="max-w-3xl mx-auto">
-        <div className="bg-white/40 dark:bg-black/80 backdrop-blur rounded-2xl shadow-xl p-6 space-y-4">
+        <div className="bg-white/40 dark:bg-black/50 backdrop-blur rounded-2xl shadow-xl p-6 space-y-4">
           <h2 className="text-2xl font-semibold">当社の強み</h2>
           <p>
             新築からリフォームまで幅広く対応し、地域に根ざした丁寧な施工を行っています。プロとして細部までこだわり抜く姿勢が信頼につながっています。
@@ -34,7 +34,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="max-w-5xl mx-auto">
-        <div className="bg-white/50 dark:bg-black/80 backdrop-blur rounded-2xl shadow-xl grid md:grid-cols-2 gap-8 items-center p-6">
+        <div className="bg-white/50 dark:bg-black/50 backdrop-blur rounded-2xl shadow-xl grid md:grid-cols-2 gap-8 items-center p-6">
           <div className="relative aspect-[3/2] w-full">
             <Image
               src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
@@ -62,7 +62,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="max-w-6xl mx-auto">
-        <div className="bg-white/90 dark:bg-black/80 backdrop-blur rounded-2xl shadow-xl p-6">
+        <div className="bg-white/50 dark:bg-black/50 backdrop-blur rounded-2xl shadow-xl p-6">
           <h2 className="text-2xl font-semibold mb-6 text-center">施工実績</h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {[
@@ -101,7 +101,7 @@ export default function Home() {
       </AnimatedSection>
 
       <AnimatedSection className="max-w-3xl mx-auto">
-        <div className="bg-white/90 dark:bg-black/80 backdrop-blur rounded-2xl shadow-xl p-6 space-y-4">
+        <div className="bg-white/50 dark:bg-black/50 backdrop-blur rounded-2xl shadow-xl p-6 space-y-4">
           <h2 className="text-2xl font-semibold">会社概要</h2>
           <p>
             山形県南陽市に本社を構え、地域密着で40年以上の実績を誇ります。お客様一人ひとりの暮らしを大切にし、最適なご提案を行います。

@@ -1,13 +1,8 @@
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import "@fontsource/noto-serif-jp/400.css";
 import "@fontsource/noto-serif-jp/700.css";
 
-import Background3DLayout from "./Background3DLayout";
-
-
-
+import Client3DLayoutWrapper from "../components/Client3DLayoutWrapper";
 
 export const metadata = {
   title: "株式会社本木建設 | 山形県南陽市の建設会社",
@@ -20,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <body>
-        <Background3DLayout>
+        <Client3DLayoutWrapper>
           {children}
-        </Background3DLayout>
+        </Client3DLayoutWrapper>
       </body>
     </html>
   );

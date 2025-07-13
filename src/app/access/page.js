@@ -38,18 +38,17 @@ export default function Access() {
       </div>
       {/* Googleマップ（ピンポイント設定） */}
       <div className="w-full aspect-[3/2] rounded-2xl overflow-hidden shadow">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31314.342931375856!2d140.12818093955107!3d38.07107122267612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8b89b7fa7e2b6b%3A0x470a43a61f544093!2z44CSOTkyLTA0NzIg5bGx5Y-j55yM5bGx5Y-j5biC5riv5a-M6LC35YyX77yR5LiB55uu77yS4oiS77yT!5e0!3m2!1sja!2sjp!4v1720812345678!5m2!1sja!2sjp"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    title="株式会社本木建設 アクセスマップ"
-  ></iframe>
-</div>
-
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.7867742175823!2d140.1409147!3d38.073694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a5518f6c6a583:0xc1e35be66c5e3192!2z44CSOTkyLTA0NzIg5bGx5Y-j55yM5bGx5Y-j5biC5riv5a-M6LC35YyX77yR5LiB55uu77yS4oiS77yT!5e0!3m2!1sja!2sjp!4v1720812345678!5m2!1sja!2sjp"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="株式会社本木建設 アクセスマップ"
+        ></iframe>
+      </div>
       {/* お問い合わせ遷移ボタン */}
       <div className="text-center mt-4">
         <Link
@@ -62,3 +61,4 @@ export default function Access() {
     </AnimatedSection>
   );
 }
+

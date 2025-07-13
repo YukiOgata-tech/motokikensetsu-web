@@ -12,7 +12,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-white py-8 mt-16">
+    <footer className="bg-neutral-900 text-white py-8 mt-16 z-1">
       <div className="max-w-6xl mx-auto px-2 sm:px-4 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
         <div className="mb-2 md:mb-0 text-center md:text-left flex-shrink-0">
           <span className="text-lg font-bold text-red-500">株式会社本木建設</span>

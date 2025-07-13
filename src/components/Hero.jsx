@@ -1,19 +1,47 @@
 'use client';
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const images = [
+  "https://tekisei-research.com/images/contents/tcblog_27.jpg",
+  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80"
+];
+
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  // 4秒ごとに画像切り替え
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center justify-center overflow-hidden">
-      <Image
-        src="https://tekisei-research.com/images/contents/tcblog_27.jpg"
-        alt="建設現場"
-        fill
-        className="object-cover opacity-80"
-        priority
-        sizes="100vw"
-      />
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 3 }}
+          className="absolute inset-0 w-full h-full"
+        >
+          <Image
+            src={images[index]}
+            alt={`ヒーロー画像${index + 1}`}
+            fill
+            className="object-cover opacity-80 transition duration-700"
+            priority
+            sizes="100vw"
+          />
+        </motion.div>
+      </AnimatePresence>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70" />
       <div className="relative z-10 w-full flex flex-col items-center text-center px-4">
         <motion.h1

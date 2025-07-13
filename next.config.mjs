@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     domains: [
-      "tekisei-research.com",     // ← 必要な外部ドメインを追加
+      "tekisei-research.com",
       "images.unsplash.com"
     ],
   },
